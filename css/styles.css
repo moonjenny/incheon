@@ -134,12 +134,17 @@ body:after {display:block; clear:both; content:'';}
 .sec-sub .mobile{display:none;}
 
 /* 계정 */
-.join-step{margin:0 0 4.1667vw;}
-.join-step span{display:block;width:100%;height:5.7133vw;font-size:0;color:#fff;}
-.join-step .step01 {background: url(../images/join/step01.jpg) no-repeat;background-size:100% auto;}
-.join-step .step02 {background: url(../images/join/step02.jpg) no-repeat;background-size:100% auto;}
-.join-step .step03 {background: url(../images/join/step03.jpg) no-repeat;background-size:100% auto;}
-.join-step .step04 {background: url(../images/join/step04.jpg) no-repeat;background-size:100% auto;}
+.join-step{margin:0 0 60px;}
+.join-step ul{position:relative;height:5.8000vw;}
+.join-step li{position:absolute;width:307px;height:87px;font-size:16px;text-align:center;background:url(../images/join/bg-step.png) top center no-repeat;background-size:100% auto;}
+.join-step li:nth-child(1){left:0;z-index:4;}
+.join-step li:nth-child(2){left:298px;z-index:3;}
+.join-step li:nth-child(3){left:596px;z-index:2;}
+.join-step li:nth-child(4){left:894px;z-index:1;}
+.join-step li span{position:relative;display:block;line-height:20px;padding:32px 0;color:#999;}
+.join-step li.selected{background:url(../images/join/bg-step-selected.png) top center no-repeat;background-size:100% auto;}
+.join-step li.selected span{font-weight:700;color:#fff;}
+
 .join-textbox {margin:3.1250vw 0 0;border:1px solid #e6e6e6;border-radius:6px;}
 .join-textbox textarea{width:100%;padding:40px;min-height:480px;box-sizing: border-box;font-size:16px;line-height:30px;}
 .chk-agree{margin:25px 0;}
@@ -228,6 +233,21 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
 /* thumbnail */
 .img-thumb {width:100%;vertical-align: top;}
 
+
+/* tablet 해상도 1201px 이상 또는 1500px 미만 */
+@media screen and (min-width : 1201px) and (max-width : 1500px) {
+    .join-step{margin:0 0 4.1667vw;}
+    .join-step ul{height:5.8000vw;}
+    .join-step li{width:20.0000vw;height:5.8000vw;}
+    .join-step li:nth-child(1){left:0;}
+    .join-step li:nth-child(2){left:24.5%;}
+    .join-step li:nth-child(3){left:49.5%;}
+    .join-step li:nth-child(4){left:74.5%;}
+    .join-step li span{font-size:1.0667vw;line-height:1.3333vw;padding:2.1333vw 0;}
+    
+
+}
+
 /* tablet 해상도 768px 이상 또는 1024px 미만 */
 @media screen and (min-width : 768px) and (max-width : 1200px) {
     .header-box .gnb{height:8.2500vw;}
@@ -268,6 +288,15 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .notice-list ul li .views {width:15%;}
 
     .pagination{margin-top:7.8125vw;}
+
+    .join-step{margin:0 0 4.1667vw;}
+    .join-step ul{height:5.8000vw;}
+    .join-step li{width:19.0000vw;height:5.8000vw;}
+    .join-step li:nth-child(1){left:0;}
+    .join-step li:nth-child(2){left:24.5%;}
+    .join-step li:nth-child(3){left:49.5%;}
+    .join-step li:nth-child(4){left:74.5%;}
+    .join-step li span{line-height:1.3333vw;padding:2.1333vw 0;}
     
 }
 
@@ -312,11 +341,14 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     
     /* 계정 */
     .join-step{margin:0 0 9.3750vw;}
-    .join-step span{display:block;width:100%;height:13.5938vw;font-size:0;color:#fff;}
-    .join-step .step01 {background: url(../images/join/m-step01.png) no-repeat;background-size:100% auto;}
-    .join-step .step02 {background: url(../images/join/m-step02.png) no-repeat;background-size:100% auto;}
-    .join-step .step03 {background: url(../images/join/m-step03.png) no-repeat;background-size:100% auto;}
-    .join-step .step04 {background: url(../images/join/m-step04.png) no-repeat;background-size:100% auto;}
+    .join-step ul{height:13.5938vw;}
+    .join-step li{width:23.4375vw;height:13.5938vw;background: url(../images/join/m-bg-step.png) top center no-repeat;background-size: 100% auto;}
+    .join-step li:nth-child(1){left:0;}
+    .join-step li:nth-child(2){left:24.5%;}
+    .join-step li:nth-child(3){left:49.5%;}
+    .join-step li:nth-child(4){left:74.5%;}
+    .join-step li span{font-size:3.7500vw;line-height:3.7500vw;padding:4.6875vw 0;}
+    .join-step li.selected{background: url(../images/join/m-bg-step-selected.png) top center no-repeat;background-size: 100% auto;}
 
     .join-textbox textarea{padding:6.2500vw;font-size:3.7500vw;line-height:6.2500vw;}
     .chk-agree{margin:7.0313vw 0 4.6875vw}
