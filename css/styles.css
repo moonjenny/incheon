@@ -34,7 +34,7 @@ input[type="search"]::-webkit-search-cancel-
 button,input[type="search"]::-webkit-search-results-
 button,input[type="search"]::-webkit-search-results-decoration {-webkit-appearance:none;}
 button::-moz-focus-inner, input::-moz-focus-inner {border:0;padding:0;}
-a, a:link, a:visited, a:hover, a:active {text-decoration:none;}
+a, a:link, a:visited, a:hover, a:active {text-decoration:none;color:#333;}
 
 img {vertical-align:top; -ms-interpolation-mode:bicubic;}
 label, select, input, textarea {color:#666; vertical-align:middle;}
@@ -129,7 +129,7 @@ body:after {display:block; clear:both; content:'';}
 .tit-box .tit-info .text{margin:18px 0 0;font-size:18px;color:#fff;}
 
 .sec-sub{margin:0 auto;padding:100px 150px;max-width:1200px;}
-.h2-tit{padding:0 0 60px;}
+.h2-tit{margin:0 0 60px;}
 .h2-tit h2{color:#222;font-size:36px;font-weight:800;}
 .sec-sub .web{display:block;}
 .sec-sub .mobile{display:none;}
@@ -251,13 +251,24 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
 .help-box-line li {position:relative;float:left;width:49%;border:1px solid #eaeaea;border-radius:4px;box-sizing: border-box;}
 .help-box-line li:nth-child(odd){margin-right:1%;}
 .help-box-line li:nth-child(even){margin-left:1%;}
-.help-box-line.big li {height:12.0000vw;}
-.help-box-line.middle li {height:9.0000vw;}
-.help-box-line.small li {height:7.5000vw;}
-.help-box-line .service-box {padding:1.6667vw;}
-.help-box-line .service-box h3{font-size:1.0667vw;color:#222;font-weight: 700;}
-.help-box-line .service-box p{font-size:1.0667vw;margin-top:1.2000vw;line-height:1.6000vw;color:#666;}
+.help-box-line.big li {height:170px;}
+.help-box-line.middle li {height:140px;}
+.help-box-line .service-box {padding:30px;}
+.help-box-line .service-box h3{font-size:16px;color:#222;font-weight: 700;}
+.help-box-line .service-box p{font-size:16px;margin-top:15px;line-height:20px;color:#666;}
 
+.help-box-title {margin-top:60px;overflow:hidden;}
+.help-box-title li {float:left;width:49%;}
+.help-box-title li:nth-child(odd){margin-right:1%;}
+.help-box-title li:nth-child(even){margin-left:1%;}
+.help-box-title .help-text{padding:30px;color:#666;text-align:center;}
+.help-box-title .txt-point{margin-top:30px;color:#fe6d3a;}
+.help-box-title .service-list {overflow:hidden;text-align:left;}
+.help-box-title .help-text a {display:inline-block;}
+.help-box-title .help-text a span {display:block;padding:16px 0 16px 90px;line-height:20px;min-height:40px;text-align:left;}
+.help-box-title .help-text .ico-service span {background:url(../images/help/ico-service.png) no-repeat;background-size:71px auto;}
+.help-box-title .help-text .ico-mail span {background:url(../images/help/ico-mail.png) no-repeat;background-size:71px auto;}
+.help-box-title .help-text .ico-download span {line-height:40px;background:url(../images/help/ico-download.png) no-repeat;background-size:71px auto;}
 
 /* tablet 해상도 1201px 이상 또는 1500px 미만 */
 @media screen and (min-width : 1201px) and (max-width : 1500px) {
@@ -298,7 +309,7 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .page-location .top-location li a:after{top:2.3333vw;right:2.3333vw;}
 
     .sec-sub{padding:8.3333vw 12.5000vw;}
-    .h2-tit{padding-bottom:5.0000vw;}
+    .h2-tit{margin-bottom:5.0000vw;}
     .h2-tit h2{font-size:3.0000vw;}
 
     .tbl_line td .inp_code .inp_txt{width:8.3333vw;margin-right:0.8333vw;}
@@ -323,6 +334,23 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .join-step li:nth-child(3){left:49.5%;}
     .join-step li:nth-child(4){left:74.5%;}
     .join-step li span{line-height:1.3333vw;padding:2.1333vw 0;}
+
+    .help-box-line{margin-top:2.5vw;}
+    .help-box-line .service-box {padding:1.5000vw;}
+    .help-box-line .service-box h3{font-size:1.3333vw;}
+    .help-box-line .service-box p{font-size:1.3333vw;margin-top:1.2500vw;line-height:2.0000vw;}
+    .help-box-line.big li{height:15vw;}
+    .help-box-line.middle li{height:10vw;}
+    .help-box-line.small li{height:10vw;}
+
+    .help-box-title .help-text{padding:2.5000vw;}
+    .help-box-title .help-text a span{padding:1.3333vw 0 1.3333vw 7.5000vw;}
+    .help-box-title .help-text .ico-download span{line-height:2.0000vw;}
+    .help-box-title .help-text .ico-service span,
+    .help-box-title .help-text .ico-mail span,
+    .help-box-title .help-text .ico-download span {line-height:2.0000vw;background-size: 5.9167vw auto;}
+    .help-box-title .txt-point{margin-top: 2.5000vw;}
+
     
 }
 
@@ -361,7 +389,7 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .page-location .top-location li a:after{top:4.2188vw;right:4.2188vw;}
 
     .sec-sub{padding:9.3750vw 3.1250vw;}
-    .h2-tit{padding-bottom:7.8125vw;}
+    .h2-tit{margin-bottom:7.8125vw;}
     .h2-tit h2{font-size:5.6250vw;font-weight: 700;}
     .sec-sub .web{display:none;}
     .sec-sub .mobile{display:block;}
@@ -434,17 +462,27 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .help-notice{padding-top:3.9063vw;line-height:4.6875vw;font-size:3.1250vw;}
     .help-title {padding:4.6875vw;height:auto;line-height:4.6875vw;}
     .help-title span {font-size:3.7500vw;}
-    .help-title .number{font-size:4.6875vw;}
+    .help-title .number{margin-right:0.7813vw;font-size:4.6875vw;}
     .help-box-line{margin-top:0;}
     .help-box-line li {width:100%;margin:0;}
     .help-box-line li:nth-child(odd),
     .help-box-line li:nth-child(even) {margin:0;margin-top:3.1250vw;}
     .help-box-line.big li,
     .help-box-line.middle li,
-    .help-box-line.small li{height:auto;}
+    .help-box-line.small li{height:auto;}   
     .help-box-line .service-box{padding:4.6875vw 3.1250vw;text-align:center;}
     .help-box-line .service-box h3{font-size:3.7500vw;}
     .help-box-line .service-box p{margin-top:1.5625vw;font-size:3.1250vw;line-height:4.0625vw;}
     
-
+    .help-box-title{margin-top:7.8125vw;}
+    .help-box-title li{width:100%;margin:0;}
+    .help-box-title .help-text {padding:4.6875vw 4.6875vw 7.0313vw;font-size:3.1250vw;}
+    .help-box-title .service-list li {width:49%;}
+    .help-box-title .help-text a span {padding:2.0833vw 0 2.0833vw 13.7500vw;font-size:3.1250vw;line-height:3.7500vw;}
+    .help-box-title .help-text .ico-service span,
+    .help-box-title .help-text .ico-mail span,
+    .help-box-title .help-text .ico-download span {line-height:3.3333vw;background-size: 11.0938vw auto;}
+    .help-box-title .help-text .ico-download span {line-height:7.3438vw;}
+    .help-box-title .txt-point {margin-top:4.6875vw;}
+    
 }
