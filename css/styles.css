@@ -128,7 +128,7 @@ body:after {display:block; clear:both; content:'';}
 .tit-box .tit-info .title strong{color:#fe6d3a;}
 .tit-box .tit-info .text{margin:18px 0 0;font-size:18px;color:#fff;}
 
-.sec-sub{margin:0 auto;padding:100px 150px;max-width:1200px;}
+.sec-sub{margin:0 auto;padding:100px 150px;max-width:1200px;min-height:550px;}
 .h2-tit{margin:0 0 60px;}
 .h2-tit h2{color:#222;font-size:36px;font-weight:800;}
 .sec-sub .web{display:block;}
@@ -162,6 +162,8 @@ body:after {display:block; clear:both; content:'';}
 .btn-phone {display:block;width:100%;height:98px;line-height:98px;text-align:center;font-size:16px;color:#fff;background:#666;border-radius:0.3125vw;}
 .btn-account {display:block;width:100%;height:40px;line-height:40px;text-align:center;font-size:16px;color:#fff;background:#666;border-radius:0.3125vw;}
 
+/* point-color */
+.color-org {color:#fe6d3a;}
 
 /* input */
 .inp_txt {padding:10px;line-height:18px;font-size:16px;color:#222;border:1px solid #e6e6e6;background:#fff;}
@@ -185,10 +187,10 @@ body:after {display:block; clear:both; content:'';}
 .page-location .page-box {margin:0 auto;max-width:1500px;font-weight:700;background:#fff;}
 .page-location .page-home a{display:block;}
 .page-location .top-location:after{content:'';display:block;clear:both;}
-.page-location .top-location li{position:relative;float:left;width:260px;border-right:1px solid #e5e5e5;}
+.page-location .top-location li{position:relative;float:left;min-width:260px;border-right:1px solid #e5e5e5;}
 .page-location .top-location li a:after{content:'';position:absolute;right:28px;top:28px;width:10px;height:6px;background: url(../images/common/btn-arr.png) no-repeat;}
-.page-location .top-location li a, .page-location .top-location li span{position:relative;display:block;padding:20px 30px;font-size:18px;color:#333;}
-.page-location .top-location li.page-home{width:60px;height:60px;}
+.page-location .top-location li a, .page-location .top-location li span{position:relative;display:block;padding:20px 70px 20px 30px;font-size:18px;color:#333;}
+.page-location .top-location li.page-home{width:60px;height:60px;min-width:60px;}
 .page-location .top-location li.page-home a{padding:0;width:100%;height:100%;background:#fe6d3a url(../images/common/ico-home.png) no-repeat;background-size:60px auto;}
 .page-location .top-location li.page-home a:after{display:none;}
 .page-location .top-location li.page-home a span{font-size:0;color:#fff;}
@@ -257,18 +259,36 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
 .help-box-line .service-box h3{font-size:16px;color:#222;font-weight: 700;}
 .help-box-line .service-box p{font-size:16px;margin-top:15px;line-height:20px;color:#666;}
 
-.help-box-title {margin-top:60px;overflow:hidden;}
-.help-box-title li {float:left;width:49%;}
-.help-box-title li:nth-child(odd){margin-right:1%;}
-.help-box-title li:nth-child(even){margin-left:1%;}
-.help-box-title .help-text{padding:30px;color:#666;text-align:center;}
-.help-box-title .txt-point{margin-top:30px;color:#fe6d3a;}
-.help-box-title .service-list {overflow:hidden;text-align:left;}
-.help-box-title .help-text a {display:inline-block;}
-.help-box-title .help-text a span {display:block;padding:16px 0 16px 90px;line-height:20px;min-height:40px;text-align:left;}
-.help-box-title .help-text .ico-service span {background:url(../images/help/ico-service.png) no-repeat;background-size:71px auto;}
-.help-box-title .help-text .ico-mail span {background:url(../images/help/ico-mail.png) no-repeat;background-size:71px auto;}
-.help-box-title .help-text .ico-download span {line-height:40px;background:url(../images/help/ico-download.png) no-repeat;background-size:71px auto;}
+.help-box-2 {margin-top:60px;overflow:hidden;}
+.help-box-2 li {float:left;width:49%;}
+.help-box-2 li:nth-child(odd){margin-right:1%;}
+.help-box-2 li:nth-child(even){margin-left:1%;}
+.help-box-2 .help-text{padding:30px;color:#666;text-align:center;}
+.help-box-2 .txt-point{margin-top:30px;color:#fe6d3a;}
+.help-box-2 .service-list {overflow:hidden;text-align:left;}
+.help-text a {display:inline-block;}
+.help-text a span {display:block;padding:16px 0 16px 90px;line-height:40px;min-height:40px;text-align:left;}
+.help-text a span.line-2 {line-height:20px;}
+.help-text .ico-service span {background:url(../images/help/ico-service.png) no-repeat;background-size:71px auto;}
+.help-text .ico-mail span {background:url(../images/help/ico-mail.png) no-repeat;background-size:71px auto;}
+.help-text .ico-download span {background:url(../images/help/ico-download.png) no-repeat;background-size:71px auto;}
+.help-box-3 {margin-top:60px;overflow:hidden;}
+.help-box-3 li {float:left;width:32.666%;margin-left:1%;}
+.help-box-3 li:first-child {margin-left:0;}
+.help-list-number {padding:20px;text-align:center;}
+.help-list-number a {display:block;color:#222;margin-top:20px;}
+.help-list-number em {color:#cc9966;}
+.help-box-3 .help-text {padding:20px;color:#222;text-align:center;}
+
+.help-login-step {margin:0 0 40px;padding:30px;border:1px solid #eaeaea;border-radius: 4px;}
+.help-login-title {text-align:center;}
+.help-login-title em {display:block;font-size:46px;line-height:40px;color:rgba(0,0,0,0.1);font-weight:800;}
+.help-login-title p {margin-top:20px;font-size:18px;color:#000;font-weight:700;line-height:30px;} 
+.help-login-title .link-office {display:inline-block;margin-top:15px;padding-right:37px;line-height:22px;color:#222;font-size:16px;background:url(../images/help/link-office.png) right center no-repeat;background-size:22px auto;}
+.help-login-step .img-box {margin:30px 0 15px;text-align:center;}
+.help-login-step .img-box + .img-box {margin-top:55px;}
+.help-login-step .img-box img{width:100%;}
+
 
 /* tablet 해상도 1201px 이상 또는 1500px 미만 */
 @media screen and (min-width : 1201px) and (max-width : 1500px) {
@@ -304,8 +324,8 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .page-location:after{top:5.0000vw;}
     .page-location .top-location li.page-home{width:5.0000vw;height:5.0000vw;}
     .page-location .top-location li.page-home a{background-size:5.0000vw auto;}
-    .page-location .top-location li{width:21.6667vw;}
-    .page-location .top-location li a, .page-location .top-location li span{padding:1.6667vw 2.5000vw;font-size:1.5000vw;}
+    .page-location .top-location li{min-width:21.6667vw;}
+    .page-location .top-location li a, .page-location .top-location li span{padding:1.6667vw 5.8333vw 1.6667vw 2.5000vw;font-size:1.5000vw;}
     .page-location .top-location li a:after{top:2.3333vw;right:2.3333vw;}
 
     .sec-sub{padding:8.3333vw 12.5000vw;}
@@ -343,15 +363,23 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .help-box-line.middle li{height:10vw;}
     .help-box-line.small li{height:10vw;}
 
-    .help-box-title .help-text{padding:2.5000vw;}
-    .help-box-title .help-text a span{padding:1.3333vw 0 1.3333vw 7.5000vw;}
-    .help-box-title .help-text .ico-download span{line-height:2.0000vw;}
-    .help-box-title .help-text .ico-service span,
-    .help-box-title .help-text .ico-mail span,
-    .help-box-title .help-text .ico-download span {line-height:2.0000vw;background-size: 5.9167vw auto;}
-    .help-box-title .txt-point{margin-top: 2.5000vw;}
+    .help-box-2 .help-text{padding:2.5000vw 0;}
+    .help-text a span{padding:1.3333vw 0 1.3333vw 7.5000vw;}
+    .help-text .ico-download span{line-height:2.0000vw;}
+    .help-text .ico-service span,
+    .help-text .ico-mail span,
+    .help-text .ico-download span {line-height:3.5000vw;background-size: 5.9167vw auto;}
+    .txt-point{margin-top: 2.5000vw;}
 
+    .help-title {line-height:1.6667vw;height:1.6667vw;}
+    .help-title .number {font-size:2.5000vw;}
+    .help-title span {font-size:1.5000vw;}
+    .help-list-number{padding:1.6667vw 0;}
+    .help-list-number a {margin-top:1.666vw;font-size:1.3333vw;}
     
+    .help-box-3 .help-text{padding:1.6667vw 0;}
+    .help-box-3 .help-text a span {padding:1.3333vw 0 1.3333vw 7.5000vw;font-size:1.3333vw;}
+    .help-box-3 .help-text .ico-download span {line-height:2.0000vw;background-size: 5.9167vw auto;}
 }
 
 
@@ -379,13 +407,13 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
 
     /* page-location */
     .page-location{padding:0;border-bottom:1px solid #e5e5e5;}
-    .page-location .top-location li.page-home{width:9.3750vw;height:9.3750vw;}
+    .page-location .top-location li.page-home{min-width:9.3750vw;width:9.3750vw;height:9.3750vw;}
     .page-location .top-location li.page-home a,.page-location .top-location li.page-home a:hover{background:#fe6d3a url(../images/common/ico-home.png) no-repeat;background-size:9.3750vw auto;}
     .page-location:after{display:none;}
     .page-location .sub-location {width:40.4688vw;}
-    .page-location .top-location li{width:40.6250vw;}
+    .page-location .top-location li{min-width:31.2500vw;}
     .page-location .top-location li:nth-child(n+4){display:none;}
-    .page-location .top-location li a, .page-location .top-location li span{padding:3.1250vw 4.6875vw;font-size:3.1250vw;line-height:3.1250vw;}
+    .page-location .top-location li a, .page-location .top-location li span{padding:3.1250vw 9.3750vw 3.1250vw 4.6875vw;font-size:3.1250vw;line-height:3.1250vw;}
     .page-location .top-location li a:after{top:4.2188vw;right:4.2188vw;}
 
     .sec-sub{padding:9.3750vw 3.1250vw;}
@@ -474,15 +502,30 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .help-box-line .service-box h3{font-size:3.7500vw;}
     .help-box-line .service-box p{margin-top:1.5625vw;font-size:3.1250vw;line-height:4.0625vw;}
     
-    .help-box-title{margin-top:7.8125vw;}
-    .help-box-title li{width:100%;margin:0;}
-    .help-box-title .help-text {padding:4.6875vw 4.6875vw 7.0313vw;font-size:3.1250vw;}
-    .help-box-title .service-list li {width:49%;}
-    .help-box-title .help-text a span {padding:2.0833vw 0 2.0833vw 13.7500vw;font-size:3.1250vw;line-height:3.7500vw;}
-    .help-box-title .help-text .ico-service span,
-    .help-box-title .help-text .ico-mail span,
-    .help-box-title .help-text .ico-download span {line-height:3.3333vw;background-size: 11.0938vw auto;}
-    .help-box-title .help-text .ico-download span {line-height:7.3438vw;}
-    .help-box-title .txt-point {margin-top:4.6875vw;}
+    .help-box-2{margin-top:7.8125vw;}
+    .help-box-2 li{width:100%;margin:0;}
+    .help-box-2 .help-text {padding:4.6875vw 4.6875vw 7.0313vw;font-size:3.1250vw;}
+    .help-box-2 .service-list li {width:49%;}
+    .help-box-2 .txt-point {margin-top:4.6875vw;}
+    .help-text a span {padding:2.0833vw 0 2.0833vw 13.7500vw;font-size:3.1250vw;line-height:3.7500vw;}
+    .help-text .ico-service span,
+    .help-text .ico-mail span,
+    .help-text .ico-download span {line-height:7.3438vw;background-size: 11.0938vw auto;}
+    .help-box-3 li{width:100%;}
+    .help-list-number {padding:0 0 9.3750vw;}
+    .help-list-number a {margin-top:3.9063vw;font-size:3.7500vw;}
+    .help-box-3 .help-text{padding:4.6875vw 0 9.3750vw;}
+    .help-box-3 .help-text a span{padding:2.1875vw 0 2.1875vw 14.0625vw;font-size:3.7500vw;line-height:3.7500vw;}
+    .help-box-3 .help-text .ico-download span{background-size:11.0938vw auto;}
+    .help-text a span.line-2{line-height:3.7500vw;}
+
+    .help-login-step{padding:6.2500vw 4.6875vw 7.0313vw}
+    .help-login-title em {font-size:7.1875vw;}
+    .help-login-title p{margin-top:1.5625vw;font-size:3.7500vw;line-height:5.0000vw;}
+    .help-login-title .link-office{margin-top:2.3438vw;padding-right:26px;font-size:3.1250vw;line-height:5.3125vw;background-size:18px auto;}
+    .help-login-step .img-box{margin:4.6875vw 0 2.3438vw;}
+    .help-login-step .img-box + .img-box{margin-top:7.0313vw;}
+
+    
     
 }
