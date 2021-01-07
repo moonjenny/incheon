@@ -521,8 +521,6 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .main-mov-list a img {width:100%;}
     .main-mov-list .mov-txt {display:none;}
 
-
-
     /* container */
     .tit-box{height:31.2500vw;margin-top:0;}
     .tit-box .tit-info{padding-top:9.3750vw}
@@ -650,6 +648,7 @@ html>body .notice-list ul li > div {float:left\9;}/* ie10,9,8,7 hack */
     .help-login-step .img-box{margin:4.6875vw 0 2.3438vw;}
     .help-login-step .img-box + .img-box{margin-top:7.0313vw;}
 
-    
+    .layer-today{width:80%;top:140px;left:50%;transform:translateX(-50%);}
+    .layer-today .btn-layer-close{height:auto;}
     
 }

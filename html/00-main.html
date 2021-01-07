@@ -65,6 +65,14 @@
       <a href="" class="btn-layer-close">닫기</a>
     </div>
   </div>
+  <script>
+    $(function(){
+      $(".btn-layer-close").click(function(e){
+        e.preventDefault();
+        $(".layer-today").hide();
+      });
+    })
+  </script>
   <!-- //popup -->
 
   <!-- container -->
