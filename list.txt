@@ -20,4 +20,4 @@ Q&A
 https://moonjenny.github.io/incheon/html/04-qna01.html
 
 메인
-https://moonjenny.github.io/incheon/html/main.html
+https://moonjenny.github.io/incheon/html/00-main.html
