@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow" />
+	<title>인천광역시교육청</title>
+	<meta name="referrer" content="origin">
+	<meta name="title" content="인천광역시교육청">
+	<meta name="description" content="인천광역시교육청">
+	<meta name="keywords" content="인천광역시교육청">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="com/guide.css">
+	<script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.modal.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../js/jstree.min.js"></script>
+	<script type="text/javascript" src="../../js/common.ui.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header s -->
+		<div id="header">
+			<h1>인천광역시교육청 html 리스트</h1>
+		</div>
+		<!--// header e -->
+
+		<!-- container s -->
+		<div id="container">
+			<h2 class="h2_tit">기본정의</h2>
+			<div class="conbox">
+				<ul>
+					<li>화면 : 반응형으로 적용하여 모바일웹 페이지까지 적용, 최소 375px, 최대해상도는 100%</li>
+					<li>기준 브라우저는 IE11. 크로스브라우징의 범위 : IE11(화면유지) ~ Edge, 구글크롬, 파이어폭스, 사파리</li>
+				</ul>
+			</div>
+			<h2 class="h2_tit">퍼블리싱 리스트<span class="process">진행현황안내 : <span class="txt_ok">빨강-완료일</span>, <span class="txt_ing">파랑-진행중</span>, <span class="txt_mod">검정-수정일</span></span></h2>
+			<div id="g_content">
+				<table id="focus" class="mlist">
+					<colgroup>
+						<col style="width:5%" />
+						<col style="width:12%" />
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col style="width:5%" />
+						<col style="width:20%" />
+						<col style="width:10%" />
+						<col >
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="first">NUM</th>
+							<th>1Depth</th>
+							<th>2Depth</th>
+							<th>3Depth</th>
+							<th>팝업</th>
+							<th>LINK</th>
+							<th>진행현황</th>
+							<th>비고</th>
+						</tr>
+					</thead>
+					<tbody class="tbl_result"></tbody>
+				</table>
+			</div>
+		</div>
+		<!--// container e -->
+		<div id="footer">
+			Copyright &copy; All Right Reserved
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".gnb > li:nth-child(5) > a").addClass("on");
+			/*
+				depth1 : 1뎁스 명칭
+				depth2 : 2뎁스 명칭
+				depth3 : 3뎁스 명칭
+				files : 파일명
+				popup : O
+				links : 파일의 경로 / 링크 클릭 시 확인 가능
+				process : 진행상태를 나타냄 / ok:완료, ing:진행중, mod:수정
+				dates : 날짜
+				etcs : 기타 의견
+				ends : 구분선 / 'OK'값을 기준으로 체크하며 'OK'값이 존재 시 구현된다.
+			*/
+			var result = [
+				{ depth1:"메인", depth2:"", depth3:"", popup:"", files:"00-main.html", links:"../00-main.html", process:"ok", dates:"2021.01.07", etcs:"", ends:"ok" },
+
+				{ depth1:"Office 365 가입", depth2:"교직원 계정 생성", depth3:"약관동의", popup:"", files:"01-join01.html", links:"../01-join01.html", process:"ok", dates:"2021.01.05", etcs:"", ends:"" },
+				{ depth1:"", depth2:"", depth3:"사용자 확인", popup:"", files:"01-join02.html", links:"../01-join02.html", process:"ok", dates:"2021.01.05", etcs:"", ends:"" },
+				{ depth1:"", depth2:"", depth3:"계정 가입", popup:"", files:"01-join03.html", links:"../01-join03.html", process:"ok", dates:"2021.01.04", etcs:"", ends:"" },
+				{ depth1:"", depth2:"", depth3:"사용자 확인", popup:"", files:"01-join04.html", links:"../01-join04.html", process:"ok", dates:"2021.01.04", etcs:"", ends:"ok" },
+
+				{ depth1:"공지사항", depth2:"", depth3:"", popup:"", files:"02-notice01.html", links:"../02-notice01.html", process:"ok", dates:"2021.01.04", etcs:"", ends:"" },
+				{ depth1:"공지사항", depth2:"공지사항 상세", depth3:"", popup:"", files:"02-notice02.html", links:"../02-notice02.html", process:"ok", dates:"2021.01.04", etcs:"", ends:"ok" },
+
+				{ depth1:"도움말", depth2:"서비스 안내", depth3:"", popup:"", files:"03-help01.html", links:"../03-help01.html", process:"ok", dates:"2021.01.06", etcs:"", ends:"" },
+				{ depth1:"", depth2:"Office 365 메뉴얼 소개", depth3:"", popup:"", files:"03-help02.html", links:"../03-help02.html", process:"ok", dates:"2021.01.06", etcs:"", ends:"" },
+				{ depth1:"", depth2:"Office 365 모바일 절차 및 정보", depth3:"", popup:"", files:"03-help03.html", links:"../03-help03.html", process:"ok", dates:"2021.01.06", etcs:"", ends:"" },
+				{ depth1:"", depth2:"Windows 10 업그레이드 절차", depth3:"", popup:"", files:"03-help04.html", links:"../03-help04.html", process:"ok", dates:"2021.01.06", etcs:"", ends:"" },
+				{ depth1:"", depth2:"Office 365 로그인 절차", depth3:"", popup:"", files:"03-help05.html", links:"../03-help05.html", process:"ok", dates:"2021.01.06", etcs:"", ends:"ok" },
+
+				{ depth1:"Q&A", depth2:"", depth3:"", popup:"", files:"04-qna01.html", links:"../04-qna01.html", process:"ok", dates:"2021.01.05", etcs:"", ends:"ok" },
+
+				//{ depth1:"", depth2:"", depth3:"", popup:"", files:".html", links:"../.html", process:"ing", dates:"2021.", etcs:"", ends:"ok" },
+
+			];
+			var output = "";
+			var result_tr = result.length;
+			$.each(result,function(index,item){
+				output += "<tr>";
+				output += "<td>"+(index+1)+"</td>";
+				output += "<td class='itemtit02 alR'>"+item.depth1+"</td>";
+				output += "<td class='alL'>"+item.depth2+"</td>";
+				output += "<td class='alL'>"+item.depth3+"</td>";
+				output += "<td class='alC'>"+item.popup+"</td>";
+				output += "<td class='alL'><a href="+item.links+" target='_blank'>"+item.links+"</a></td>";
+				output += "<td><span class='txt_"+item.process+"'>"+item.dates+"</span></td>";
+				if(item.etcs == null){
+					output += "<td></td>";
+				}else{
+					output += "<td class='alL'>"+item.etcs+"</td>";
+				}
+				output += "</tr>"
+				if(item.ends == "ok"){
+					output += "<tr><td colspan='9' class='borB'></td></tr>"
+				}
+			})
+			$(".tbl_result").html(output);
+		});
+	</script>
+</body>
+</html>
